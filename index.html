@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Yala Parking</title>
+  <meta charset="utf-8">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ <!-- for icons-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/149f7e759e.js" crossorigin="anonymous"></script>
+<!-- for css file-->
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-white text-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#!"><img src="/img/logo.png" alt="yala parking"></a>
+      
+      <div class="collapse navbar-collapse  " id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="#">Parking Operators</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Download Our App</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="#"><ion-icon name="log-in-outline"></ion-icon>
+              Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Map-->
+  <div class="map" id="contact">
+    <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <br />
+    <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
+    <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <!-- Email address input-->
+        <div class="row" style="margin-top: -10em;">
+            <div class="col" >
+                <input class="form-control form-control-lg ml-5" style="width: 75%;  " type="text" placeholder="Where would you like to park? " />
+                
+            </div>
+            <div class="col-auto"><button class="btn btn-warning btn-lg mr-0" id="submitButton" type="submit">Search</button></div>
+        </div>
+</div>
+
+  <section class="page-section" id="services">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading mt-50">Don't waste your time looking for a place to park</h2>
+            <h5 class="section-subheading text-muted">Search our listings and find the perfect spot near your home or office</h5>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+              <img src="/img/mapIllustration@2x.png" class="img-thumbnail" alt="Cinque Terre">
+                <h4 class="my-3">Search For Parking</h4>
+                <p class="text-muted">Search more than 700 parking spaces<br>
+                  across Dubai</p>
+            </div>
+            <div class="col-md-4">
+              <img src="/img/bookIllustration@2x.png" class="img-thumbnail" alt="Cinque Terre">
+                <h4 class="my-3">Book Parking</h4>
+                <p class="text-muted">Book & Pay online using our secure<br>
+                  booking system.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="/img/carIllustration@2x.png" class="img-thumbnail" alt="Cinque Terre">
+                <h4 class="my-3">Park Your Car</h4>
+                <p class="text-muted">Receive your access card in 24 hours & park.<br>
+                  It really is that simple.
+                  
+                  </p>
+            </div>
+        </div>
+    </div>
+     <!--slider-->
+ <div class="items">
+    <div> 
+        
+        <img src="https://www.yallaparking.com/Content/img/logos/HomeToHome.png"></div>
+    <div><img src="https://www.yallaparking.com/Content/img/logos/mag.png"></div>
+    <div><img src="https://www.yallaparking.com/Content/img/logos/NationalCarParks.png"></div>
+    <div><img src="https://www.yallaparking.com/Content/img/logos/deyaar.png"></div>
+    <div><img src="https://www.yallaparking.com/Content/img/logos/doubletree.png"></div>
+    <div><img src="https://www.yallaparking.com/Content/img/logos/dubizzle.png"></div>
+    <div><img src="https://www.yallaparking.com/Content/img/logos/intrecontinental.png"></div>
+</div>
+<!--End slider-->
+
+<!-- popular places-->
+
+
+<div class="places pt-5 pb-5">
+    <div class="text-center main-title">
+        <h2 class="fs-3 fw-normal mb-4">Popular Places in Dubai</h2>
+        <p class="fs-5">Dubai Parking Hot Spots</p>
+    </div>
+    
+    <div class="container-fluid position-relative">
+        <div class="row pt-2 pb-2 gap-3 flex-nowrap">
+            <a href="" class="position-relative">
+                <div class="text position-absolute top-50 start-50 w-100 p-3">
+                    <h4 class="fw-normal">Sheikh Zayed Road</h4>
+                    <p class="fs-6">Find Parking Near Sheikh Zayed Road Dubai</p>
+                </div>
+            </a>
+            <a href="" class="position-relative">
+                <div class="text position-absolute top-50 start-50 w-100 ps-3 pe-3">
+                    <h5 class="fw-normal">Jumeirah Lake Tower</h5>
+                    <p class="fs-6">Find Parking In Jumeirah Lake Tower</p>
+                </div>
+            </a>
+            <a href="" class="position-relative">
+                <div class="text position-absolute top-50 start-50 w-100 ps-3 pe-3">
+                    <h5 class="fw-normal">Dubai Marina</h5>
+                    <p class="fs-6">Find Parking In Dubai Marina</p>
+                </div>
+            </a>
+            <a href="" class="position-relative">
+                <div class="text position-absolute top-50 start-50 w-100 ps-3 pe-3">
+                    <h5 class="fw-normal">Barsha Heights</h5>
+                    <p class="fs-6">Find Parking In Barsha Heights Dubai</p>
+                </div>
+            </a>
+            <a href="" class="position-relative">
+                <div class="text position-absolute top-50 start-50 w-100 ps-3 pe-3">
+                    <h5 class="fw-normal">DIFC</h5>
+                    <p class="fs-6">Find Parking In Dubai International Financial Center</p>
+                </div>
+            </a>
+            <a href="" class="position-relative"></a>
+            <div class="text position-absolute top-50 start-50 w-25 p-3">
+                <h4 class="fw-normal">Sheikh Zayed Road</h4>
+                <p class="fs-6">Find Parking Near Sheikh Zayed Road Dubai</p>
+            </div>
+        </div>
+    </div>
+       
+    </div>
+</div>
+<!--End popular places-->
+
+  
+    <!--  Partners Section -->
+		<div class="partners p-5">
+			<div class="text-center main-title">
+				<h2 class="fs-3 fw-normal mb-4">As featured in</h2>
+				
+			</div>
+			<div class="container p-5 overflow-hidden position-relative">
+				<div class="row flex-nowrap">
+					<img class="col" src="https://www.yallaparking.com/Content/img/logos/IncArabia.png" alt="ALT IMG">
+					<img class="col" src="https://www.yallaparking.com/Content/img/logos/Entrepreneur.png" alt="ALT IMG">
+					<img class="col" src="https://www.yallaparking.com/Content/img/logos/TheNational.png" alt="ALT IMG">
+					<img class="col" src="https://www.yallaparking.com/Content/img/logos/wamda.png" alt="ALT IMG">
+					<img class="col" src="https://www.yallaparking.com/Content/img/logos/Dubaieye.png" alt="ALT IMG">
+				</div>
+			</div>
+		</div>
+        <!--End Partners Section-->
+        
+        <!--  Catalog -->
+		<div class="catalog p-5 pb-2">
+			<div class="text-center main-title">
+				<h2 class="fs-3  mb-4 text-secondary">How Listing Works</h2>
+				<p class="fs-5">Help out a neighbour in need by easily adding your parking space.<br>
+                     We take care of the access cards, deposits, confirmation & <br> payments.</p>
+			</div>
+			<div class="container text-center pt-5">
+				<div class="row">
+					<div class="box col-12 col-sm-4">
+						<i class="fa-4x mb-3 fa-solid fa-map-location-dot"></i>
+						<h6 class="mb-4">List Parking</h6>
+						<p>Add your unused space & choose a price.</p>
+					</div>
+					<div class="box col-12 col-sm-4">
+						<i class="fa-4x mb-3 fa-solid fa-key"></i>
+						<h6 class="mb-4">Confirm</h6>
+						<p>Confirm a convenient time for one of our team to pick up your access card when you receive a booking.</p>
+					</div>
+					<div class="box col-12 col-sm-4">
+						<i class="fa-4x mb-3 fa-solid fa-money-bill-wave"></i>
+						<h6 class="mb-4">Earn</h6>
+						<p>Earn money each Month from your unused space, deposited directly to your account.</p>
+					</div>
+				</div>
+			</div>
+            </div>
+		<!-- End Catalog -->
+            <!-- Parking Space -->
+		<div class="parking">
+			<div class="container">
+				<h2 class="fw-normal mb-4">List Your Parking Space</h2>
+				<p class="fs-6 mb-3">Join our growing community of over 700 parking spaces & start earning today.</p>
+				<button type="button" class="btn rounded-pill">Let's Get Started</button>
+			</div>
+		</div>
+		<!-- ٍEnd Parking Space -->
+        <!--  Footer -->
+		<footer class="pt-5">
+			<div class="container pt-3 pb-5">
+				<div class="flex-sm-nowrap flex-wrap d-flex justify-content-between">
+					<div class="left">
+						<a href="" class="logo mb-4"><img src="https://www.yallaparking.com/Content/img/logo.png" alt=""></a>
+						<p>Rent an unused space from a neighbour in your building or area, OR, earn money renting yours out to a neighbour in need.</p>
+					</div>
+					<div class="right">
+						<div class="right-links">
+							<div class="links d-flex gap-3">
+								<ul class="m-0 p-0">
+									<h5 class="mb-3">Helpful Links</h5>
+									<li><a href=""><i class="me-1 fa-solid fa-angle-right"></i>Log in</a></li>
+									<li><a href=""><i class="me-1 fa-solid fa-angle-right"></i>Register</a></li>
+									<li><a href=""><i class="me-1 fa-solid fa-angle-right"></i>About Us</a></li>
+                                    <li><a href=""><i class="me-1 fa-solid fa-angle-right"></i>Commercial Partners</a></li>
+                                </ul>
+                                <ul class=" mt-3">
+									
+									<li><a href=""><i class="me-1 fa-solid fa-angle-right"></i>FAQs</a></li>
+									<li><a href=""><i class="me-1 fa-solid fa-angle-right"></i>Terms & Conditions</a></li>
+									<li><a href=""><i class="me-1 fa-solid fa-angle-right"></i>Cancellation & Refund</a></li>
+								</ul>
+								
+								<div class="contact">
+									<h5 class="mb-3">Contact Us</h5>
+									<p >
+										In5 Innovation Centre, Boutique Office Villa #7, Dubai Media City, Dubai, United Arab Emirates
+										Phone: +971585772881<br>
+										E-Mail: <br> <span>hello@yallaparking.com</span>
+                                        <br>
+                                       <div class="social">
+                                       
+                                        <a href="#"><i class="fa-brands fa-facebook-f pr-3"></i></a>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    
+                                    </div>
+
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom text-center pt-3 pb-3">
+				<p>© 2017 - 2020 YallaParking Internet FZ LLC. All Rights Reserved.</p>
+			</div>
+            
+		</footer>
+		<!-- End Footer -->
+        <script>
+            $(document).ready(function(){
+     
+     $('.items').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5
+});
+          });
+        </script>
+        </body>
+        </html>
+		

@@ -1,0 +1,237 @@
+body{
+   background-color:rgb(255, 255, 255) ; 
+}
+a:hover{
+    color: #F18120;
+}
+
+.map {
+    height: 30rem;
+  }
+  .map iframe {
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  
+  @media (max-width: 992px) {
+    .map {
+      height: 75%;
+    }
+  }
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.col1{
+    margin-top: -10 em;
+}
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+.text-center{
+    margin-top: 80px;
+  }
+.img-thumbnail{
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+/* Partners  */
+.partners .row img {
+	width: 200px;
+	height: 100px;
+}
+@media (max-width: 768px) {
+	.partners .row img {
+		width: 150px;
+	}
+}
+.partners .container {
+	max-width: 1000px;
+	
+}
+/* End Partners */
+/*slider*/
+.items{
+    width:90%;
+    margin:0px auto;
+    margin-top: 100px;
+    border-bottom: 1px solid grey;
+  }
+  .slick-slide{
+    margin:10px;
+  }
+  .slick-slide img{
+    width:100%;
+    border: 0px solid #fff;
+  }
+  .slick-prev:before, .slick-next:before{
+    color: #F18120;
+  }
+  /*End slider*/
+
+i{
+    color: #F18120;
+}
+.parking {
+	height: 80vh;
+	padding: 100px;
+	color: white;
+	background-image: url(https://www.yallaparking.com/Content/img/slider-bg-02.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+@media (max-width: 500px) {
+	.parking {
+		padding: 30px;
+	}
+}
+.parking::before {
+	
+	position: absolute;
+    width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0 0 0 / 25% );
+}
+.parking .container {
+	position: relative;
+	z-index: 8;
+	
+}
+.parking .container p {
+	max-width: 550px;
+}
+.parking .container button {
+	background-color: #F18120;
+	color: white;
+	font-weight: 500;
+	font-size: 14px;
+	padding: .5rem 1.5rem;
+}
+/* End Parking Space */
+/* Start Footer */
+footer {
+	color: var(--gray-color);
+}
+footer .container {
+	border-bottom: 1px solid gray;
+}
+footer .logo img {
+	max-width: 100px;
+}
+footer .left {
+	max-width: 300px;
+}
+footer .left p {
+	font-size: 14px;
+}
+footer .right .right-links li{
+    list-style-type: none;
+}
+footer .right .right-links a {
+	font-size: 14px;
+	text-decoration: none;
+	color: grey;
+}
+footer .right .right-links a:hover{
+    color: #F18120;
+}
+.mt-3, .my-3 {
+    margin-top: 3rem!important;
+}
+.right-links ul i{
+color: grey;
+}
+footer .contact {
+	max-width: 160px;
+	font-size: 13px;
+}
+
+footer .bottom p {
+	font-size: 14px;
+}
+span{
+    color: #F18120;
+}
+.social i{
+    color: rgba(128, 128, 128, 0.667);
+}
+.social i:hover{
+    
+}
+/* End Footer */
+/*  Partners  */
+.partners .row img {
+	width: 200px;
+	height: 100px;
+}
+@media (max-width: 768px) {
+	.partners .row img {
+		width: 150px;
+	}
+}
+.partners .container {
+	max-width: 1000px;
+	border-bottom: 1px solid #CCC;
+}
+/* End Partners  */
+/* popular places */
+.places .container-fluid .row {
+	overflow: hidden;
+	margin-left: -140px;
+}
+.places .container-fluid .row a {
+	width: 280px;
+	height: 300px;
+	display: block;
+	background-size: cover;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.places .container-fluid .row a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0 0 0 / 20% );
+}
+.places .container-fluid .row a:nth-child(1) {
+	background-image: url(https://www.yallaparking.com/Content/img/SZR.jpg);
+}
+.places .container-fluid .row a:nth-child(2) {
+	background-image: url(https://www.yallaparking.com/Content/img/category-box-01.jpg);
+}
+.places .container-fluid .row a:nth-child(3) {
+	background-image: url(https://www.yallaparking.com/Content/img/DubaiMarina.jpg);
+}
+.places .container-fluid .row a:nth-child(4) {
+	background-image: url(https://www.yallaparking.com/Content/img/SZR.jpg);
+}
+.places .container-fluid .row a:nth-child(5) {
+	background-image: url(https://www.yallaparking.com/Content/img/dubai-1367094_1280.jpg);
+}
+.places .container-fluid .row a:nth-child(6) {
+	background-image: url(https://www.yallaparking.com/Content/img/SZR.jpg);
+}
+.places .container-fluid .row a .text {
+	transform: translate(-50%, 0);
+	color: white !important;
+}
+.places .container-fluid .row a .text p {
+	color: var(--bul-color);
+}
+
+/* End popular places */
